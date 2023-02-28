@@ -157,7 +157,7 @@ if __name__ == "__main__":
         print(f"INFO: '{config.device}' is available")
         device = config.device
     else:
-        print(f"WARNING: '{config.device}' not available, using cpu instead")
+        print(f"INFO: using cpu")
         device = config.device = "cpu"    
 
     dataset = datasets.get_dataset(config.dataset)
